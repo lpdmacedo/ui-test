@@ -1,0 +1,15 @@
+{
+  "name": "MyProjectName",
+  "version": "1.0.0",
+  "description": "Archetype Functional Test",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "npm install && npm install -g nightwatch && ./node_modules/selenium-standalone/bin/selenium-standalone install",
+    "test": "nightwatch"
+  },
+  "devDependencies": {
+    "phantomjs": "^2.1.1",
+    "selenium-standalone": "^4.8.0",
+    "webdriverio": "^3.4.0"
+  }
+}
