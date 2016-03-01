@@ -92,7 +92,7 @@ executeTest() {
 
 
   cd $UI_TEST_FOLDER
-  nightwatch -e $OPT_BROWSER
+  nightwatch -e $OPT_BROWSER --config /app/ui-test/nightwatch-jenkins.json
 
   status=$?
   echo "Terminating jobs..."

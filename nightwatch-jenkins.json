@@ -1,0 +1,42 @@
+{
+    "src_folders": "./tests/e2e/groups/",
+    "output_folder": "./reports/e2e/",
+    "globals_path": "./tests/e2e/globals.js",
+    "page_objects_path": "./tests/e2e/pages/",
+    "custom_commands_path": "./tests/e2e/custom-commands",
+    "selenium": {
+        "start_process": false,
+        "server_path": "/app/ui-test/node_modules/selenium-standalone/.selenium/selenium-server/2.50.1-server.jar",
+        "log_path" : "",
+        "host" : "127.0.0.1",
+        "port" : 4444
+    },
+    "test_settings": {
+        "phantom": {
+            "skip_testcases_on_fail":false,
+            "screenshots" : {
+                "enabled" : false,
+                "on_failure" : false,
+                "on_error" : false,
+                "path" : "./tests/screenshots"
+            },
+            "desiredCapabilities": {
+                "browserName": "phantomjs",
+                "phantomjs.binary.path": "/app/ui-test/node_modules/phantomjs/bin/phantomjs"
+            }
+        },
+        "phantom": {
+            "skip_testcases_on_fail":false,
+            "screenshots" : {
+                "enabled" : false,
+                "on_failure" : false,
+                "on_error" : false,
+                "path" : "./tests/screenshots"
+            },
+            "desiredCapabilities": {
+                "browserName": "phantomjs",
+                "phantomjs.binary.path": "/app/ui-test/node_modules/phantomjs/bin/phantomjs"
+            }
+        }
+    }
+}
