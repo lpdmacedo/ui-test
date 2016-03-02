@@ -32,9 +32,9 @@ help() {
 waitForStartApp() {
   COUNT=0
   echo "Waiting for app up"
-  while [[ $COUNT -lt 1200 ]]; do
+  while [ $COUNT -lt 1200 ]; do
     OUT=$(curl -m 1 --write-out %{http_code} --silent --output /dev/null 127.0.0.1:8080/ping)
-    if [[ "$OUT" == "200" ]]; then
+    if [ "$OUT" -eq "200" ]; then
       echo "App started"
       return
     fi
